@@ -16,7 +16,7 @@ services:
     image: foomo/pagespeed_exporter:latest
     restart: unless-stopped
     environment:
-      - MY_API_KEY=AIzaSyAfvEAKIVTx0Wb7wZkIFulfXbIrgsScDUU
+      - MY_API_KEY=xxx
     ports:
       - "9271:9271"
     command:
