@@ -7,7 +7,7 @@ services:
     environment:
       - SONAR_URL=http://localhost:9000/
       - SONAR_USER=admin
-      - SONAR_PASSWORD=admin
+      - SONAR_PASSWORD=Admin@123
     build:
       context: .
       dockerfile: Dockerfile
