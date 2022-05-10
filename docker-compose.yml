@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - SONAR_URL=http://localhost:9000/
+      - SONAR_URL=http://65.0.42.18:9000/
       - SONAR_USER=admin
       - SONAR_PASSWORD=Admin@123
     build:
@@ -15,5 +15,9 @@ services:
   pagespeed_exporter:
     image: foomo/pagespeed_exporter:latest
     restart: unless-stopped
+    environment:
+      - MY_API_KEY=AIzaSyAfvEAKIVTx0Wb7wZkIFulfXbIrgsScDUU
     ports:
       - "9271:9271"
+    command:
+     - "-api-key=${MY_API_KEY}"
