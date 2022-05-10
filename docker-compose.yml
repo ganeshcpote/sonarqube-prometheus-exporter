@@ -11,13 +11,3 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-
-  pagespeed_exporter:
-    image: foomo/pagespeed_exporter:latest
-    restart: unless-stopped
-    environment:
-      - MY_API_KEY=AIzaSyAfvEAKIVTx0Wb7wZkIFulfXbIrgsScDUU
-    ports:
-      - "9271:9271"
-    command:
-     - "-api-key=${MY_API_KEY}"
