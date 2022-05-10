@@ -11,3 +11,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+
+  pagespeed_exporter:
+    image: foomo/pagespeed_exporter:latest
+    restart: unless-stopped
+    ports:
+      - "9271:9271"
