@@ -5,7 +5,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - SONAR_URL=http://65.0.42.18:9000/
+      - SONAR_URL=http://65.0.42.18:9000
       - SONAR_USER=admin
       - SONAR_PASSWORD=Admin@123
     build:
